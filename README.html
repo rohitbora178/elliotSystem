@@ -1,0 +1,159 @@
+<h1 id="getting-started">Getting Started</h1>
+<p>This assignment uses the following packages:</p>
+<ul>
+  <li>
+    <a href="https://developer.microsoft.com/en-us/fluentui#/controls/web"
+      >FluentUI</a
+    >
+  </li>
+</ul>
+<h2 id="available-scripts">Available Scripts</h2>
+<p>In the project directory, you can run:</p>
+<h3 id="-npm-ci-"><code>npm ci</code></h3>
+<p>Installs the necessary dependencies to run the application.</p>
+<h3 id="-npm-start-"><code>npm start</code></h3>
+<p>
+  Runs the app in the development mode.\ Open
+  <a href="http://localhost:3000">http://localhost:3000</a> to view it in the
+  browser.
+</p>
+<p>
+  The page will reload if you make edits.\ You will also see any lint errors in
+  the console.
+</p>
+<h2 id="your-task">Your task</h2>
+<ul>
+  <li>
+    <input type="checkbox" /> Add a FluentUI
+    <a
+      href="https://developer.microsoft.com/en-us/fluentui#/controls/web/detailslist"
+      >DetailsList</a
+    >
+    component to display a list of users from
+    <a href="https://jsonplaceholder.typicode.com/users">this JSON array</a>
+    <ul>
+      <li>
+        The code to retrieve this data from the URL above is provided to you in
+        the file <em>src/api/fetchData.ts</em>
+      </li>
+      <li>
+        Display the following properties in the DataList:
+        <ul>
+          <li><input type="checkbox" /> Id</li>
+          <li><input type="checkbox" /> Name</li>
+          <li><input type="checkbox" /> Username</li>
+          <li>
+            <input type="checkbox" /> Email
+            <ul>
+              <li>
+                <a
+                  href="https://www.w3docs.com/snippets/html/how-to-create-mailto-links.html"
+                  >The email address should be clickable and open up the
+                  user&#39;s default email client of choice.</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" /> Address
+            <ul>
+              <li>
+                This information should be displayed in this format:
+                <ul>
+                  <li>
+                    <blockquote>
+                      <p>
+                        {Street}<br />
+                        {Suite}<br />
+                        {City} {Zipcode}
+                      </p>
+                    </blockquote>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input type="checkbox" /> Company
+            <ul>
+              <li>
+                The company information should be hidden behind a
+                <a
+                  href="https://developer.microsoft.com/en-us/fluentui#/controls/web/button"
+                  >DefaultButton</a
+                >
+                component with the text &quot;Show Info&quot;. After this button
+                is clicked the information should be displayed in this format:
+                <ul>
+                  <li>
+                    <blockquote>
+                      <p>
+                        <strong>Name:</strong> {Company Name}<br />
+                        <strong>Catch Phrase:</strong> {Company Catchphrase}<br />
+                        <strong>Bs:</strong> {Company Bs}
+                      </p>
+                    </blockquote>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        While this the data is being loaded, display a
+        <a
+          href="https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner"
+          >Spinner</a
+        >
+        component
+        <ul>
+          <li>
+            <img src="spinner_example.gif" alt="Loading Spinner example" />
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <input type="checkbox" /> Add a FluentUI
+    <a
+      href="https://developer.microsoft.com/en-us/fluentui#/controls/web/button"
+      >PrimaryButton</a
+    >
+    with the text <strong>Show Odds Only</strong> to give the user the option to
+    only display the elements in the array with odd-numbered Ids. Once clicked,
+    this button&#39;s text should change to <strong>Show All</strong> and if it
+    is clicked again it will display all of the records again. After this, the
+    text and click behavior should go back to what it was originally.
+    <ul>
+      <li>
+        This behavior should not affect how the
+        <strong>Show Info</strong> company info button behavior works.
+        <ul>
+          <li>
+            If a record is displaying its company information and is hidden
+            temporarily because of the <strong>Show Odds Only</strong> button,
+            it should still be displaying its company info after it is displayed
+            again.
+          </li>
+          <li>
+            If a record is NOT displaying its company information and is hidden
+            temporarily because of the <strong>Show Odds Only</strong> button,
+            it should NOT be displaying its company info after it is displayed
+            again.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="expected-results">Expected Results</h1>
+<p>
+  Please review the video below to see how the application should look and
+  behave.
+</p>
+<video width="640" height="360" controls>
+  <source src="./expected.webm" type="video/webm" />
+  Your browser does not support the video tag.
+</video>
